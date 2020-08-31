@@ -155,13 +155,8 @@ img {
     height: 75%;
 }
 
-.container img {
-    cursor: url('https://i.postimg.cc/6338xsj2/oie-nr-M8-Ct-Mr-SPb-H.png'), auto;
-}
-
 .box-text {
     margin-top: 10%;
-    cursor: url('https://i.postimg.cc/6338xsj2/oie-nr-M8-Ct-Mr-SPb-H.png'), auto;
 }
 
 .nav {
@@ -220,9 +215,22 @@ footer {
     }
 }
 
+@media screen and (max-width: 300px) {
+    .dancing-hamsters {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+}
+
 
 
 @media screen and (min-width: 740px) {
+
+    a {
+        cursor: url('https://i.postimg.cc/85XcJ6Vk/hand-cursor.png'), auto;
+    }
 
     h1 {
         font-size: 3em;
@@ -238,7 +246,7 @@ footer {
     .dancing-hamsters {
         height: 2rem;
         width: 9rem;
-        transform: translateY(11.5vh);
+        transform: translateY(11vh);
     }
 
     .container {
