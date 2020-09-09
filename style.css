@@ -39,7 +39,7 @@ h1 {
     font-size: 1.3em;
     font-family: 'Oleo Script', cursive, 'Helvetica', sans-serif;
     letter-spacing: .07rem;
-    transform: translateY(15vh);
+    transform: translateY(16.5vh);
 }
 
 h1 span {
@@ -84,11 +84,12 @@ h2 {
     font-size: .4rem;
     font-family: 'Press Start 2P', cursive, serif;
     text-transform: uppercase;
-    transform: translateY(15.5vh)
+    transform: translateY(17.5vh)
 }
 
 .dancing-hamsters {
-    display: flex;
+    /* display: flex; */
+    display: none;
     position: relative;
     margin: auto;
     align-content: center;
@@ -162,10 +163,10 @@ img {
 .nav {
     margin: auto;
     text-align: center;
-    transform: translateY(70vh);
+    transform: translateY(72vh);
     font-size: .5rem;
     text-transform: uppercase;
-    line-height: .8rem;
+    line-height: .9rem;
 }
 
 .nav a {
@@ -176,6 +177,7 @@ img {
 
 
 footer {
+    display: none;
     margin: auto;
     width: 100%;
     height: 1rem;
@@ -215,21 +217,10 @@ footer {
     }
 }
 
-@media screen and (max-width: 300px) {
-    .dancing-hamsters {
-        display: none;
-    }
-    footer {
-        display: none;
-    }
-}
-
-
-
 @media screen and (min-width: 740px) {
 
     a {
-        cursor: url('https://i.postimg.cc/85XcJ6Vk/hand-cursor.png'), auto;
+        cursor: url('https://i.postimg.cc/tgjt4LXR/glitch-hand-cursor.png'), auto;
     }
 
     h1 {
@@ -244,6 +235,7 @@ footer {
     }
 
     .dancing-hamsters {
+        display: flex;
         height: 2rem;
         width: 9rem;
         transform: translateY(11vh);
@@ -264,6 +256,12 @@ footer {
         transform: translateX(15%);
         font-size: .75rem;
        }
+
+    .box-text {
+        margin-top: 10%;
+        transform: translateX(-8%);
+
+    }
     
     .img {
          width: 100%;
@@ -271,7 +269,7 @@ footer {
         }
 
     .nav li {
-            margin: .5em;
+            margin: 1em;
             display: inline;
             text-align: center;
             align-items: center;
@@ -279,6 +277,7 @@ footer {
             font-size: .85rem;
             }
     .nav {
+        display: block;
         transform: translateY(64vh);
     }
 
